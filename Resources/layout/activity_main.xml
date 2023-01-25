@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Section One -->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <RelativeLayout
+            android:background="@drawable/roundededges"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimage"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personal1"
+                 android:layout_width="65dp"
+                 android:layout_height="65dp"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/nametextview"
+                android:text="Lexxx Merciful"
+                android:layout_toRightOf="@+id/profileimage"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="fonts/GlacialIndifference-Bold.ttf"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/placetextview"
+                android:text="New Jersey, USA"
+                android:layout_toRightOf="@+id/profileimage"
+                android:layout_below="@+id/nametextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/phonecall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/profileimage"
+                android:layout_below="@+id/placetextview"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:src="@drawable/star"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/star"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/star"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/star"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/star"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Section Two -->
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22">
+
+        <TextView
+            android:id="@+id/balancetextview"
+            fontPath="fonts/GlacialIndifference-Bold.ttf"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:text="$32,405.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_above="@+id/balancetextview"
+            android:gravity="center"
+            android:text="Account Balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <!-- Section Three -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <RelativeLayout
+            android:background="@drawable/roundededges"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/friendimageview1"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                fontPath="fonts/GlacialIndifference-Bold.ttf"
+                android:id="@+id/descriptiontextview1"
+                android:layout_toRightOf="@+id/friendimageview1"
+                android:layout_marginLeft="10dp"
+                android:text="Transfer to Julia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/transferdatetextview"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/descriptiontextview1"
+                android:layout_toRightOf="@+id/friendimageview1"
+                android:text="22-May-2019"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/amounttextview1"
+                android:textColor="@color/colorRed"
+                android:textSize="13sp"
+                android:text="-$7200.00"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/amounttextview1"
+                android:text="View"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+         <RelativeLayout
+            android:background="@drawable/roundededges"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/friendimageview2"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personal1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/descriptiontextview2"
+                android:layout_toRightOf="@+id/friendimageview2"
+                android:layout_marginLeft="10dp"
+                android:text="Deposit from Kaycee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="fonts/GlacialIndifference-Bold.ttf" />
+
+            <TextView
+                android:id="@+id/transferdatetextview2"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/descriptiontextview2"
+                android:layout_toRightOf="@+id/friendimageview2"
+                android:text="24-June-2019"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/amounttextview2"
+                android:textColor="@color/colorGreen"
+                android:textSize="13sp"
+                android:text="$2300.00"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/amounttextview2"
+                android:text="View"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/roundededges"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/friendimageview3"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personal"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/descriptiontextview3"
+                android:layout_toRightOf="@+id/friendimageview3"
+                android:layout_marginLeft="10dp"
+                android:text="Deposit from Peter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="fonts/GlacialIndifference-Bold.ttf" />
+
+            <TextView
+                android:id="@+id/transferdatetextview3"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/descriptiontextview3"
+                android:layout_toRightOf="@+id/friendimageview3"
+                android:text="27-June-2019"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/amounttextview3"
+                android:textColor="@color/colorGreen"
+                android:textSize="13sp"
+                android:text="$4100.00"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/amounttextview3"
+                android:text="View"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:drawableLeft="@drawable/history"
+                    android:background="@drawable/roundbutton"
+                    android:textAllCaps="false"
+                    android:text="View History"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/roundbutton"
+                    android:textAllCaps="false"
+                    android:text="New Transaction"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
